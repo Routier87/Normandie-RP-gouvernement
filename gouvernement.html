@@ -8,59 +8,163 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-      text-align: center;
-      background: url('banniere.png') center/cover no-repeat;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: url('banniere.png') center/cover no-repeat fixed;
       backdrop-filter: brightness(0.6);
     }
 
-    .content {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 40px;
-      border-radius: 20px;
-      max-width: 700px;
-      margin: auto;
+    header {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px 10px;
+      border-bottom: 2px solid gold;
     }
 
-    h1 {
-      font-size: 2.5em;
+    header h1 {
+      font-size: 2.3em;
+      color: #ffd700;
+      text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 60px auto;
+      background: rgba(0, 0, 0, 0.65);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+      line-height: 1.7;
+    }
+
+    h2 {
+      color: #ffd700;
+      margin-top: 30px;
+      border-left: 4px solid #ffd700;
+      padding-left: 10px;
+      text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+    }
+
+    p, li {
+      font-size: 1.05em;
       margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    ul li::before {
+      content: "• ";
       color: #ffd700;
     }
 
-    p {
-      font-size: 1.2em;
-      line-height: 1.6;
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #ccc;
+      font-size: 0.9em;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    footer {
-      position: absolute;
-      bottom: 10px;
-      width: 100%;
-      text-align: center;
-      font-size: 0.9em;
-      color: #ccc;
+    .btn-accueil {
+      display: inline-block;
+      margin-top: 30px;
+      background: transparent;
+      border: 2px solid #ffd700;
+      color: #ffd700;
+      padding: 10px 25px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-accueil:hover {
+      background: #ffd700;
+      color: #111;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        margin: 40px 15px;
+        padding: 25px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="content">
-    <h1>⚖️ Gouvernement de Normandie RP</h1>
-    <p>
-      Le Gouvernement de Normandie RP représente l’autorité officielle du serveur.<br>
-      Il est responsable des lois, de la sécurité publique, de la justice et du bon fonctionnement de la ville.
-    </p>
-    <p>
-      Les décisions du Maire et de ses ministres impactent directement la vie RP de tous les citoyens.<br>
-      Respectez leurs directives pour garantir un jeu équilibré et immersif.
-    </p>
-  </div>
+  <header>
+    <h1>🇫🇷 Gouvernement de Normandie RP | LIFE | SEMI-WL 🇫🇷</h1>
+  </header>
+
+  <main>
+    <h2>1. Présentation générale</h2>
+    <p>Le Gouvernement de Normandie RP représente l’autorité suprême de l’État dans la région. Il veille à la sécurité, à la justice, au bon fonctionnement des services publics et à la prospérité des citoyens RP.</p>
+    <p><strong>L’État est fondé sur trois grands principes :</strong></p>
+    <ul>
+      <li>Ordre & Justice ⚖️</li>
+      <li>Sécurité & Discipline 👮</li>
+      <li>Progrès & Liberté RP 🕊️</li>
+    </ul>
+
+    <h2>2. Hiérarchie du Gouvernement</h2>
+    <p><strong>Président de la République</strong><br>
+    • Chef suprême de l’État.<br>
+    • Dirige la politique nationale et internationale.<br>
+    • Nomme les ministres et le Premier Ministre.<br>
+    • Peut dissoudre le gouvernement en cas de crise.</p>
+
+    <p><strong>Premier Ministre</strong><br>
+    • Dirige le gouvernement sous l’autorité du Président.<br>
+    • Supervise les ministères.<br>
+    • Coordonne les réformes et gère les crises internes.<br>
+    • Remplace temporairement le Président en cas d’absence.</p>
+
+    <p><strong>Conseil des Ministres</strong><br>
+    • Réunit chaque semaine le Président, le Premier Ministre et les ministres.<br>
+    • Prend les décisions nationales et prépare les nouvelles lois.<br>
+    • Gère les budgets et les services publics.</p>
+
+    <h2>3. Ministères Officiels</h2>
+    <ul>
+      <li><strong>Ministère de la Justice :</strong> Supervise la police judiciaire et les tribunaux, garantit le respect des lois RP, gère les sanctions et procès.</li>
+      <li><strong>Ministère de l’Intérieur :</strong> Gère les forces de l’ordre (Police, Gendarmerie, BAC) et la sécurité publique.</li>
+      <li><strong>Ministère de l’Économie & Finances :</strong> Supervise les impôts, entreprises RP, banques et commerces.</li>
+      <li><strong>Ministère de la Santé & EMS :</strong> Dirige les hôpitaux et les services médicaux RP.</li>
+      <li><strong>Ministère de la Communication :</strong> Gère la presse et les annonces officielles.</li>
+      <li><strong>Ministère des Travaux & Transports :</strong> S’occupe des routes, permis et véhicules officiels.</li>
+      <li><strong>Ministère de la Défense :</strong> Gère l’armée et les situations de crise RP.</li>
+    </ul>
+
+    <h2>4. Lois fondamentales du Gouvernement</h2>
+    <ul>
+      <li>Toute personne doit respecter les décisions du gouvernement.</li>
+      <li>La corruption et les abus de pouvoir sont interdits.</li>
+      <li>Les ministres doivent rendre des comptes au Premier Ministre.</li>
+      <li>Le Président a le dernier mot en cas de désaccord.</li>
+      <li>Le non-respect de la hiérarchie entraîne une révocation immédiate.</li>
+    </ul>
+
+    <h2>5. Fonctionnement des élections RP</h2>
+    <p>Les élections présidentielles peuvent être organisées par le staff RP. Les candidats doivent présenter un programme, le vote peut être public ou RP simulé via Discord.  
+    Le mandat présidentiel dure 4 semaines RP (modifiable par le staff).</p>
+
+    <h2>6. Code de conduite du Gouvernement</h2>
+    <ul>
+      <li>Neutralité, professionnalisme et respect du RP.</li>
+      <li>Interdiction d’utiliser les fonctions gouvernementales à des fins personnelles.</li>
+      <li>Les réunions gouvernementales sont tenues en vocal ou en jeu RP.</li>
+    </ul>
+
+    <h2>7. Contacts officiels</h2>
+    <p><strong>Discord Gouvernemental :</strong> à venir</p>
+
+    <a href="index.html" class="btn-accueil">🏠 Retour à l'accueil</a>
+  </main>
 
   <footer>
     © 2025 Normandie RP — Gouvernement Officiel
