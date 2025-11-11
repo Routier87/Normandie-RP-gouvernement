@@ -1,116 +1,182 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gouvernement | Normandie RP</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- HEADER -->
-  <header>
-    <nav class="navbar">
-      <div class="nav-left">
-        <img src="logo.png" alt="Logo Normandie RP" class="nav-logo">
-        <span class="logo-text">Normandie RP</span>
-      </div>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="gouvernement.html" class="active">Gouvernement</a></li>
-      </ul>
-    </nav>
-  </header>
+/* ===== CONFIG GLOBALE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <!-- MAIN CONTENT -->
-  <main class="rules">
-    <h1>🏛️ Gouvernement de Normandie RP</h1>
-    
-    <section>
-      <h2>1. Présentation générale</h2>
-      <p>Le Gouvernement de Normandie RP représente l’autorité suprême de l’État dans la région. Il veille à la sécurité, à la justice, au bon fonctionnement des services publics, et à la prospérité des citoyens RP.</p>
-      <p>L’État est fondé sur trois grands principes :</p>
-      <ul>
-        <li>Ordre & Justice ⚖️</li>
-        <li>Sécurité & Discipline 👮</li>
-        <li>Progrès & Liberté RP 🕊️</li>
-      </ul>
-    </section>
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0b0b0b;
+  color: #eee;
+  overflow-x: hidden;
+}
 
-    <section>
-      <h2>2. Hiérarchie du Gouvernement</h2>
-      <p><strong>Président de la République :</strong></p>
-      <ul>
-        <li>Chef suprême de l’État.</li>
-        <li>Dirige la politique nationale et internationale.</li>
-        <li>Nomme les ministres et le Premier Ministre.</li>
-        <li>Peut dissoudre le gouvernement en cas de crise.</li>
-      </ul>
+/* ===== NAVBAR ===== */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background: rgba(10, 10, 10, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
 
-      <p><strong>Premier Ministre :</strong></p>
-      <ul>
-        <li>Dirige le gouvernement sous l’autorité du Président.</li>
-        <li>Supervise les ministères.</li>
-        <li>Coordonne les réformes et gère les crises internes.</li>
-        <li>Remplace temporairement le Président en cas d’absence.</li>
-      </ul>
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+}
 
-      <p><strong>Conseil des Ministres :</strong></p>
-      <ul>
-        <li>Réunit chaque semaine le Président, le Premier Ministre et les ministres.</li>
-        <li>Prend les décisions nationales et prépare les nouvelles lois.</li>
-        <li>Gère les budgets et les services publics.</li>
-      </ul>
-    </section>
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-    <section>
-      <h2>3. Ministères Officiels</h2>
-      <ul>
-        <li><strong>Ministère de la Justice :</strong> Supervise la police judiciaire et les tribunaux, garantit le respect des lois RP, gère les sanctions et procès.</li>
-        <li><strong>Ministère de l’Intérieur :</strong> Gère les forces de l’ordre (Police, Gendarmerie, BAC) et la sécurité publique.</li>
-        <li><strong>Ministère de l’Économie & Finances :</strong> Supervise les impôts, entreprises RP, banques et commerces.</li>
-        <li><strong>Ministère de la Santé & EMS :</strong> Dirige les hôpitaux et les services médicaux RP.</li>
-        <li><strong>Ministère de la Communication :</strong> Gère la presse et les annonces officielles.</li>
-        <li><strong>Ministère des Travaux & Transports :</strong> S’occupe des routes, permis et véhicules officiels.</li>
-        <li><strong>Ministère de la Défense :</strong> Gère l’armée et les situations de crise RP.</li>
-      </ul>
-    </section>
+.nav-logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
 
-    <section>
-      <h2>4. Lois fondamentales du Gouvernement</h2>
-      <ul>
-        <li>Toute personne doit respecter les décisions du gouvernement.</li>
-        <li>La corruption et les abus de pouvoir sont interdits.</li>
-        <li>Les ministres doivent rendre des comptes au Premier Ministre.</li>
-        <li>Le Président a le dernier mot en cas de désaccord.</li>
-        <li>Le non-respect de la hiérarchie entraîne une révocation immédiate.</li>
-      </ul>
-    </section>
+.logo-text {
+  font-weight: 700;
+  color: #f4c542;
+  font-size: 1.2em;
+}
 
-    <section>
-      <h2>5. Fonctionnement des élections RP</h2>
-      <p>Les élections présidentielles peuvent être organisées par le staff RP. Les candidats doivent présenter un programme, le vote peut être public ou RP simulé via Discord. Le mandat présidentiel dure 4 semaines RP (modifiable par le staff).</p>
-    </section>
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
 
-    <section>
-      <h2>6. Code de conduite du Gouvernement</h2>
-      <ul>
-        <li>Neutralité, professionnalisme et respect du RP.</li>
-        <li>Interdiction d’utiliser les fonctions gouvernementales à des fins personnelles.</li>
-        <li>Les réunions gouvernementales sont tenues en vocal ou en jeu RP.</li>
-      </ul>
-    </section>
+.navbar a {
+  color: #ddd;
+  text-decoration: none;
+  transition: 0.2s;
+}
 
-    <section>
-      <h2>7. Contacts officiels</h2>
-      <ul>
-        <li>Discord gouvernemental : <a href="https://discord.gg/HNP5TUXyZm" target="_blank">Rejoindre le Discord</a></li>
-      </ul>
-    </section>
-  </main>
+.navbar a:hover,
+.navbar a.active {
+  color: #f4c542;
+}
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Normandie RP — Tous droits réservés</p>
-  </footer>
-</body>
-</html>
+/* ===== HERO SECTION ===== */
+.hero-bg {
+  height: 100vh;
+  background: url('background.jpg') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  color: #f4c542;
+  text-shadow: 0 0 20px rgba(244, 197, 66, 0.4);
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.1em;
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* ===== BOUTONS ===== */
+.btn-gouvernement, .btn-discord {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1em;
+}
+
+/* Bouton Gouvernement */
+.btn-gouvernement {
+  background: transparent;
+  color: #f4c542;
+  border: 2px solid #f4c542;
+}
+
+.btn-gouvernement:hover {
+  background: #f4c542;
+  color: #111;
+  transform: scale(1.05);
+}
+
+/* Bouton Discord */
+.btn-discord {
+  background: #5865F2;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(88, 101, 242, 0.4);
+}
+
+.btn-discord:hover {
+  background: #4752C4;
+  transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 25px 10px;
+  background: rgba(10, 10, 10, 0.95);
+  color: #bbb;
+  font-size: 0.9em;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8em;
+  }
+}
